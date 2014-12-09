@@ -2,8 +2,9 @@
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\BarcoMovimento.cs">
     <Files>
-      <File FileName="Assets\Scripts\BarcoMovimento.cs" Line="35" Column="23" />
-      <File FileName="Assets\Scripts\Person.cs" Line="15" Column="2" />
+      <File FileName="Assets\Scripts\BarcoMovimento.cs" Line="17" Column="31" />
+      <File FileName="Assets\Scripts\TouchBarcoScript.cs" Line="4" Column="34" />
+      <File FileName="Assets\Scripts\SplineFollow.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
