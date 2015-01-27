@@ -20,4 +20,12 @@ public class ButtonsBehaviors : MonoBehaviour {
 	public void exit(){
 		Application.Quit(); 
 	}
+
+	public void toMenu(){
+		Application.LoadLevel ("Menu");
+	}
+
+	public void toCreditos(){
+		Application.LoadLevel ("Creditos");
+	}
 }
