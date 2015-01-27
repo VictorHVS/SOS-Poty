@@ -10,20 +10,25 @@ public class BarcoMovimento : MonoBehaviour {
 	private bool isMovingLeft;
 	private bool isMovingRight;
 	public Animator anim;
+
+	private float axis;
 	
 	void Start () {
 		isMovingLeft = false;
 		isMovingRight = false;
 		move = transform.localPosition;
+
 	}
 
 	void Update () {
 
-		if ((Input.GetKeyDown (KeyCode.A)) && move.x > -0.9f && !isMovingRight) {
+		axis = Input.GetAxis ("Horizontal");
+
+		if (axis < 0f && move.x > -0.9f && !isMovingRight) {
 			isMovingLeft = true;
 			anim.SetBool ("dobrarEsquerda", true);
 		}
-		if ((Input.GetKeyDown (KeyCode.D)) && move.x < 0.9f && !isMovingLeft) {
+		if (axis > 0.0 && move.x < 0.9f && !isMovingLeft) {
 			isMovingRight = true;
 			anim.SetBool ("dobrarDireita", true);
 		}
